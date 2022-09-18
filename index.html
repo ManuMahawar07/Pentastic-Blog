@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anonymous Blog -  Personal Blog</title>
+
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 5px;
+  background: #2350da;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+</head>
+
+<body class="light-theme">
+
+  <header>
+
+    <div class="container">
+
+      <nav class="navbar">
+
+        <a href="#">
+          <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous's logo" width="80" class="logo-light">
+          <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous's logo" width="80" class="logo-dark">
+        </a>
+
+        <div class="btn-group">
+
+          <button class="theme-btn theme-btn-mobile light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+          <button class="nav-menu-btn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="flex-wrapper">
+
+          <ul class="desktop-nav">
+
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link">About Us</a>
+            </li>
+
+            <li>
+              <a href="contactus.html" class="nav-link">Contact Us</a>
+            </li>
+
+          </ul>
+
+          <button class="theme-btn theme-btn-desktop light">
+            <ion-icon name="moon" class="moon"></ion-icon>
+            <ion-icon name="sunny" class="sun"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="mobile-nav">
+
+          <button class="nav-close-btn">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="wrapper">
+
+            <p class="h3 nav-title">Main Menu</p>
+
+            <ul>
+              <li class="nav-item">
+                <a href="#" class="nav-link">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="#" class="nav-link">About Me</a>
+              </li>
+
+              <li class="nav-item">
+                <a href="contactus.html" class="nav-link">Contact</a>
+              </li>
+            </ul>
+
+          </div>
+
+          <div>
+
+            <p class="h3 nav-title">Topics</p>
+
+
+          </div>
+
+        </div>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+
+
+  <main>
+
+    <!--
+      - #HERO SECTION
+    -->
+
+    <div class="hero">
+
+      <div class="container">
+
+        <div class="left">
+
+          <h1 class="h1">
+            Hi, We are&nbsp;<b>Team&nbsp;Anonymous</b>.
+            <br>Blog Content Creator
+          </h1>
+
+          <p class="h3">
+            Specialized in <abbr title="Accessibility">Blogs</abbr>
+            and <abbr title="Accessibility">Content Writing</abbr> 
+          </p>
+
+          <div class="btn-group">
+            <a href="loginpage.html" class="btn btn-primary">Sign Up</a>
+            <a href="create.html" class="btn btn-primary">Create Your Blog</a>
+          </div>
+
+        </div>
+
+        <div class="right">
+
+          <div class="pattern-bg"></div>
+          <div class="img-box">
+            <img src="https://media.vanguardcommunications.net/blog-e1505840253663.jpg" alt="Anonymous" class="hero-img">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+
+
+    <div class="main">
+
+      <div class="container">
+
+        <!--
+          - BLOG SECTION
+        -->
+        <div style="margin-left:200px;">
+        <form class="example" action="/action_page.php">
+          <input type="text" placeholder="Search blog here..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        </div>
+        <br>
+        <div class="blog">
+
+          <h2 class="h2">Latest Blog Posts</h2>
+
+          <div class="blog-card-group">
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://thrivemyway.com/wp-content/uploads/2021/10/gaming-battles.jpg" alt="Building microservices with Dropwizard, MongoDB & Docker"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Gaming Blog</button>
+
+                <h3>
+                  <a href="Mongo.html" class="h3">
+                    Create a best gaming blog
+                  </a>
+                </h3>
+
+                <p class="blog-text">
+                  New game studios pop up all the time and they’re always looking to collab with bloggers & game journalists. Gaming blogs are great because they offer news coverage, game reviews, and press.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="Mongo.html" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2022-01-17">Aug 25, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://cdn.pixabay.com/photo/2021/09/07/11/53/car-6603726_1280.jpg" alt="Fast web page loading on a $20 feature phone" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Travel Blog</button>
+
+                <h3><a href="Travelblog.html" class="h3">Create an awesome travelling blog</a></h3>
+
+                <p class="blog-text">
+                  If you’re passionate about traveling and travel frequently, you could actually monetize if you write travel blogs.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-12-10">Aug 15, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT2M">2 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://1.bp.blogspot.com/-t72W1Dx0LWI/YP_RsDtoNKI/AAAAAAAAA28/cXTgW1cFkkQApIe9SP6PBiFd5DW0H_gNQCLcBGAsYHQ/s1280/tech.jpg" alt="Accessibility Tips for Web Developers" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Technology Blog</button>
+
+                <h3><a href="Technologyblog.html" class="h3">Create an technology blog and aware to everyone by their content</a></h3>
+
+                <p class="blog-text">
+                  So, you finally decided to start a blog? By making up your mind for blogging you have already accomplished 50% of the task. Now the only thing left is to decide what to write and where to write.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-28">Aug 3, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://s.alicdn.com/@sc04/kf/Haa98409f10774d39aaac882f63aaad47R.jpg" alt="Dynamically Securing Databases using Hashicorp Vault"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Beauty Blog</button>
+
+                <h3><a href="Beautyblog.html" class="h3">Create an beauty blog and to provide the information about cosmetics</a></h3>
+
+                <p class="blog-text">
+                  You write a beauty blog by providing the best answers to simple beauty questions, reviewing products, sharing tips, making tutorials, and being insanely helpful.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-20">July 29, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT4M">4 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://www.godaddy.com/garage/wp-content/uploads/2016/12/health-and-fitness-blog-lifting.jpg"
+                  alt="Adaptive Loading - Improving Web Performance on low-end devices" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Health And Fitness Blog</button>
+
+                <h3><a href="Health and Fitness.html" class="h3">Create an blog and to provide the infoemation about health and fitness</a></h3>
+
+                <p class="blog-text">
+                  The internet has broken down the traditional walls between a distributor and their audience and fitness blogs are an example of this. Previously if a fitness expert wanted to get their ideas out to a wider audience.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-11-10">July 10, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT3M">3 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://cdn4.wpbeginner.com/wp-content/uploads/2018/01/startafoodblog.jpg"
+                  alt="Don't Develop Just for Yourself - A Developer's Checklist to Accessibility" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Cooking Blog</button>
+
+                <h3><a href="Cooking.html" class="h3">Create an cooking blog and to attract the people </a>
+                </h3>
+
+                <p class="blog-text">
+                  To start honestly, at this point in my “food blog journey” and yes I did just use that phrase, I just take it as it comes. I’ve found after yeeears of doing this (coming up on 4 years to be exact, so I’m basically a blog grandma).
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-25">June 25, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT7M">7 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://fatfrogmedia.com/wp-content/uploads/2022/01/how-to-start-a-lifestyle-blog-1600-x-840-px.jpg"
+                  alt="Building a Restful CRUD API with Node JS, Express, and MongoDB" width="250"
+                  class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Lifestyle Blog</button>
+
+                <h3><a href="Lifestyle.html" class="h3">Create an lifestyle blog and to jealous our neighbour </a></h3>
+
+                <p class="blog-text">
+                  It’s hard to keep your creative juices flowing when you’ve got a million things to do with your new blog.There’s always something new to add or do. Brainstorming fresh blog post ideas for lifestyle blogs requires a bit of time that you just don’t have.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="#" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-15">June 15, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <div class="blog-card">
+
+              <div class="blog-card-banner">
+                <img src="https://web-static.wrike.com/cdn-cgi/image/width=900,format=auto/blog/content/uploads/2016/08/Writing-for-Productivity.jpg?av=98acff4b1666aa73224ffe5b3b4b87c3" alt="Monitoring Performance with the PageSpeed Insights API"
+                  width="250" class="blog-banner-img">
+              </div>
+
+              <div class="blog-content-wrapper">
+
+                <button class="blog-topic text-tiny">Daily Blog</button>
+
+                <h3><a href="Daily.html" class="h3">Create an daily blog and explore everything daily</a></h3>
+
+                <p class="blog-text">
+                  Daily vlogs are the most popular kind of vlogs in the market these days. You take your viewers along with you in your day. Daily vlogs are also like daily diary entries.
+                </p>
+
+                <div class="wrapper-flex">
+
+                  <div class="profile-wrapper">
+                    <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous" width="50">
+                  </div>
+
+                  <div class="wrapper">
+                    <a href="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" class="h4">Anonymous</a>
+
+                    <p class="text-sm">
+                      <time datetime="2021-10-03">June 3, 2022</time>
+                      <span class="separator"></span>
+                      <ion-icon name="time-outline"></ion-icon>
+                      <time datetime="PT5M">5 min</time>
+                    </p>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            </div>
+
+          </div>
+
+        </div>
+        <button class="btn load-more">Load More</button>
+        <br>
+
+
+
+        <!--
+          - ASIDE
+        -->
+  
+
+  <footer>
+
+    <div class="container">
+
+      <div class="wrapper">
+
+        <a href="#" class="footer-logo">
+          <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous Blog's Logo" width="90" class="logo-light">
+          <img src="https://i.pinimg.com/originals/4f/44/8a/4f448a72ccd6bfe10a0ed976039ab574.png" alt="Anonymous Blog's Logo" width="90" class="logo-dark">
+        </a>
+
+        <p class="footer-text">
+        Let's Start and Create Your First Blog Here With Team Anonymous.
+        </p>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Quick Links</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Advertise with us</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="contactus.html" class="footer-link">Contact Us</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="wrapper">
+
+        <p class="footer-title">Legal Stuff</p>
+
+        <ul>
+
+          <li>
+            <a href="#" class="footer-link">Privacy Notice</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Cookie Policy</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Terms Of Use</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <p class="copyright">
+      &copy; Copyright 2022 <a href="#">Anonymous</a>
+    </p>
+
+  </footer>
+
+  
+  <script src="./assets/js/script.js"></script>
+
+ 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</body>
+
+</html>

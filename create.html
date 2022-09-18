@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script LANGUAGE="JavaScript" type="text/javascript">
+      function display() {
+        DispWin = window.open('','NewWin', 'toolbar=no,status=no,width=2000px,height=800')
+        message = "<ul><li><b>Image: </b>" + document.form1.image.value;
+        message += "<li><b>TITLE: </b>" + document.form1.title.value;
+        message += "<li><b>CONTENT: </b>" + document.form1.content.value + "</ul>";
+        DispWin.document.write(message);
+      }
+      </script>
+    <style>
+        
+        body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  background-image: url("https://img.freepik.com/free-photo/neutral-abstract-texture-simple-background_53876-102511.jpg?w=2000");
+ width: 100%;
+  height: 100%; 
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+      </style>
+    <title>Create Blog</title>
+
+</head>
+<body  class="bg">
+<br><br><br><br><br><br><br><br><br> <br> <h1 style="color:rgb(33, 89, 187);"><b> <u> <center>Create Your First Blog</center></b></u></h1>
+<br>
+<form name="form1" align="center">
+  <p><h3><b>Enter Image That You Want To Add In The Blog</b></h3>
+      <input style="background-color: Cream;" type="file" id="image" name="image" >
+      <br>
+  </p>
+  <p><h3><center>This is the title that will be displayed at the top of your Blog. </center></h3>
+      <label for="text"><textarea name="title" id="Title" cols="50" rows="3" value="title" required></textarea></label>
+  </p>
+  <p> <h3><center>This is the Content that will be displayed inside your Blog. </center></h3>
+      <label for="text"><textarea name="content" id="content" cols="100" rows="10" value="content" required></textarea></label>
+  </p>
+  <p ><input style=" background-color: #2a2de2;
+  border: none;
+  color: white;padding: 6px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 1px 1px;
+  cursor: pointer;"TYPE="BUTTON" VALUE="Create" onClick="display();" ></p>
+  <br><br><br>
+  </form>
+</body>
+</html>
